@@ -1,11 +1,58 @@
-@import './reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 
 /* font-family: 'Work Sans', sans-serif; */
 /* font-family: 'Gilroy', sans-serif; */
 
-
 body {
-  font-family: 'Gilroy', sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 500;
+}
+
+.container {
+  max-width: 1750px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Button */
+.btn {
+ 
+  display: inline-block;         /* ширина блока зависит от контента внутри */
+  padding: 10px 24px;            /* отступы сверху снизу и слева справа */
+  border: 1px solid #114455;
+  border-radius: 2px;            /* закругления радиуса кнопки */
+  color: #114455;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* Header */
+.header {
+  min-height: 100vh;            
+  background-color: #e1edf2;
+  background-image: url("./../img//header/header-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.header__top {
+  padding: 44px 0;
+}
+
+.nav {
+  display: flex;                      /* расположили по краям */
+  justify-content: space-between;     /* построили в строчку */
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  column-gap: 118px;
+}
+
+.link {
+  color: #114455;
+  font-size: 20px;
+  font-weight: 800;
 }
