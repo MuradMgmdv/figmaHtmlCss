@@ -1,8 +1,6 @@
 @import "./reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import '../fonts/Gilroy/stylesheet.css';
 
-/* font-family: 'Work Sans', sans-serif; */
-/* font-family: 'Gilroy', sans-serif; */
 
 body {
   font-family: "Gilroy", sans-serif;
@@ -17,15 +15,59 @@ body {
 
 /* Button */
 .btn {
- 
-  display: inline-block;         /* ширина блока зависит от контента внутри */
-  padding: 10px 24px;            /* отступы сверху снизу и слева справа */
+  position: relative;
+  display: inline-block;         
+  padding: 10px 24px;           
+  padding-right: 72px;
   border: 1px solid #114455;
-  border-radius: 2px;            /* закругления радиуса кнопки */
+  border-radius: 2px;            
   color: #114455;
   font-size: 20px;
   font-weight: 800;
 }
+
+.btn::after {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-image: url('./../img/icons/Arrow\ Right\ \ Black.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn:hover {
+  background-color: #114455;
+  color: #fff;
+}
+
+.btn:hover::after {
+  background-image: url('./../img/icons/Arrow\ Right\ White.svg');
+}
+
+.btn--big {
+  padding: 14px 32px;
+  padding-right: 80px;
+}
+
+.btn--dark {
+  background-color: #114455;
+  color: #fff;
+}
+
+.btn--dark:hover {
+  background-color: #000;
+}
+
+.btn--dark::after {
+  background-image: url('./../img/icons/Arrow\ Right\ White.svg');
+
+}
+
 
 /* Header */
 .header {
@@ -37,12 +79,15 @@ body {
 }
 
 .header__top {
+  margin-bottom: 126px;
   padding: 44px 0;
 }
 
+/* Nav */
+
 .nav {
-  display: flex;                      /* расположили по краям */
-  justify-content: space-between;     /* построили в строчку */
+  display: flex;                      
+  justify-content: space-between;     
 }
 
 .nav__list {
@@ -56,3 +101,32 @@ body {
   font-size: 20px;
   font-weight: 800;
 }
+
+/* Header content */
+
+.header__content {
+  max-width: 1060px;
+}
+
+.header__title {
+  margin-bottom: 48px;
+  max-width: 734px;
+  font-weight: 800;
+  color: #114455;
+  font-size: 80px;
+}
+
+.header__text {
+  margin-bottom: 72px;
+  font-size: 34px;
+  color: #1F1F1F;
+}
+
+.header__btn {
+
+}
+
+
+
+
+
