@@ -13,6 +13,10 @@ body {
   margin: 0 auto;
 }
 
+.none {
+  display: none;
+}
+
 /* Button */
 .btn {
   position: relative;
@@ -122,11 +126,36 @@ body {
   color: #1F1F1F;
 }
 
-.header__btn {
 
+/* Case Studies */
+
+.case-studies {
+  padding: 184px 0;
 }
 
 
 
+.case-studies__title {
+  max-width: 1070px;
+  margin-bottom: 12px;
+}
 
+
+
+.case-studies__text {
+   max-width: 1070px;
+   margin-bottom: 100px;
+}
+
+.title {
+ font-size: 80px;
+ font-weight: 800;
+ color: #1F1F1F;
+}
+
+.text {
+  font-size: 28px;
+  line-height: 44px;
+  color: #1F1F1F;
+}
 
