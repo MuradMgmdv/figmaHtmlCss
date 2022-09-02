@@ -209,7 +209,7 @@ body {
 position: relative;
 }
 
-.video::after {
+.video-overlay::after {
   content: '';
   position: absolute;
   left: 0;
@@ -218,6 +218,8 @@ position: relative;
   height: 100%;
   background-color: rgba(17, 68, 85, 0.5);
 }
+
+
 
 .video__btn {
   position: absolute;
